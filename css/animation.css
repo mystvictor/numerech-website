@@ -1,0 +1,568 @@
+/* =====================================================
+   NUMERECH
+   Premium Consulting Animations
+===================================================== */
+
+
+
+/* =====================================================
+   GLOBAL TRANSITIONS
+===================================================== */
+
+
+a,
+button,
+.challenge,
+.expertise-grid div,
+.insight-grid article,
+.industry-list span,
+.process div {
+
+        transition:
+                all .35s ease;
+
+}
+
+
+
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+
+.reveal {
+
+        opacity: 0;
+
+        transform:
+                translateY(40px);
+
+        transition:
+
+                opacity .8s ease,
+
+                transform .8s ease;
+
+}
+
+
+
+.reveal.active {
+
+        opacity: 1;
+
+        transform:
+                translateY(0);
+
+}
+
+
+
+
+
+
+/* =====================================================
+   HERO ENTRY
+===================================================== */
+
+
+.hero-content {
+
+        animation:
+                heroFade 1s ease forwards;
+
+}
+
+
+
+@keyframes heroFade {
+
+
+        from {
+
+                opacity: 0;
+
+                transform:
+                        translateY(50px);
+
+        }
+
+
+        to {
+
+                opacity: 1;
+
+                transform:
+                        translateY(0);
+
+        }
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   HERO NETWORK ANIMATION
+===================================================== */
+
+
+.digital-network {
+
+
+        animation:
+                networkFloat 8s ease-in-out infinite;
+
+
+}
+
+
+
+@keyframes networkFloat {
+
+
+        0% {
+
+                transform:
+                        translateY(0);
+
+        }
+
+
+        50% {
+
+                transform:
+                        translateY(-20px);
+
+        }
+
+
+        100% {
+
+                transform:
+                        translateY(0);
+
+        }
+
+}
+
+
+
+
+
+.digital-network div {
+
+
+        animation:
+                pulseNode 4s infinite;
+
+
+}
+
+
+
+.digital-network div:nth-child(2) {
+
+        animation-delay:
+                .8s;
+
+}
+
+
+
+.digital-network div:nth-child(3) {
+
+        animation-delay:
+                1.5s;
+
+}
+
+
+
+.digital-network div:nth-child(4) {
+
+        animation-delay:
+                2.2s;
+
+}
+
+
+
+
+@keyframes pulseNode {
+
+
+        0% {
+
+                box-shadow:
+                        0 0 0 0 rgba(43, 125, 189, .25);
+
+        }
+
+
+        70% {
+
+                box-shadow:
+                        0 0 0 25px rgba(43, 125, 189, 0);
+
+        }
+
+
+        100% {
+
+                box-shadow:
+                        0 0 0 0 rgba(43, 125, 189, 0);
+
+        }
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+
+.header {
+
+
+        animation:
+                headerAppear .7s ease;
+
+
+}
+
+
+
+@keyframes headerAppear {
+
+
+        from {
+
+                opacity: 0;
+
+                transform:
+                        translateY(-20px);
+
+        }
+
+
+        to {
+
+                opacity: 1;
+
+                transform:
+                        translateY(0);
+
+        }
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   CHALLENGE BLOCKS
+===================================================== */
+
+
+.challenge:hover {
+
+
+        background:
+                white;
+
+
+        transform:
+                translateY(-5px);
+
+
+}
+
+
+
+.challenge:hover h3 {
+
+
+        color:
+                var(--secondary);
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   MANIFESTO
+===================================================== */
+
+
+.manifesto div {
+
+
+        position: relative;
+
+
+}
+
+
+
+.manifesto div::before {
+
+
+        content: "";
+
+
+        position: absolute;
+
+
+        left: 0;
+
+
+        bottom: 0;
+
+
+        width: 0;
+
+
+        height: 2px;
+
+
+        background:
+                var(--accent);
+
+
+        transition:
+                width .5s ease;
+
+
+}
+
+
+
+.manifesto div:hover::before {
+
+
+        width: 100%;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   PROCESS
+===================================================== */
+
+
+.process div:hover {
+
+
+        background:
+                var(--light);
+
+
+}
+
+
+
+.process div:hover span {
+
+
+        color:
+                var(--secondary);
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   RESULTS
+===================================================== */
+
+
+.results-grid div {
+
+
+        transition:
+                transform .35s ease;
+
+
+}
+
+
+
+.results-grid div:hover {
+
+
+        transform:
+                translateY(-8px);
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   EXPERTISE
+===================================================== */
+
+
+.expertise-grid div:hover {
+
+
+        border-color:
+                var(--accent);
+
+
+        transform:
+                translateY(-5px);
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   INSIGHTS
+===================================================== */
+
+
+.insight-grid article:hover {
+
+
+        transform:
+                translateY(-8px);
+
+
+        box-shadow:
+
+                0 20px 40px rgba(16, 24, 40, .08);
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   INDUSTRIES
+===================================================== */
+
+
+.industry-list span:hover {
+
+
+        background:
+                var(--primary);
+
+
+        color: white;
+
+
+        border-color:
+                var(--primary);
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   BUTTON EFFECTS
+===================================================== */
+
+
+.btn-primary,
+.btn-secondary {
+
+
+        position: relative;
+
+        overflow: hidden;
+
+}
+
+
+
+.btn-primary:hover,
+.btn-secondary:hover {
+
+
+        transform:
+                translateY(-3px);
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+
+@media(prefers-reduced-motion:reduce) {
+
+
+        *,
+        *::before,
+        *::after {
+
+
+                animation-duration:
+                        .01ms !important;
+
+
+                transition-duration:
+                        .01ms !important;
+
+
+                scroll-behavior: auto !important;
+
+
+        }
+
+
+}
